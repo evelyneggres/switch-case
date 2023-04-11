@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+</head>
+<body>
+
+
+    <h1>Signos do zodíaco</h1>
+
+
+<div class="container">
+
+    <div class="linha">
+
+    <input type="text" id="signos">
+</div>
+    <button onclick="escolhaSigno()">Buscar</button>
+
+</div>
+
+
+    <div id="frase" class="texto"></div>
+
+
+    <div class="img">
+        <img src="https://www.thgestaoepessoas.com.br/wp-content/uploads/2021/10/09_05_2022_23_29_02.jpg" id="imagem">
+    </div>
+
+
+
+    <script>
+
+        function escolhaSigno() {
+            var texto 
+            var signo = document.getElementById("signos").value;
+
+            switch(signo) {
+                case "Áries": 
+                texto = 'Os mais estressadinho do zodíaco, os arianos são impulsivos, determinados e nada pacientes.'
+
+                document.getElementById("imagem").src = "https://nsc-total-wp.s3.sa-east-1.amazonaws.com/wp-content/uploads/2022/10/shutterstock_1443585467-1-1.jpg";
+                break
+
+                case "Touro":
+                texto = 'Tão calmos e apegados, mas pisa no calo deles para ver o que acontece. Não vamos esquecer da fome sem fim que eles têm!'
+
+                document.getElementById("imagem").src ="https://nsc-total-wp.s3.sa-east-1.amazonaws.com/wp-content/uploads/2022/10/Touro-1.jpg";
+                break
+
+                case "Gêmeos":
+                texto = 'Donos da razão e falantes, com essa junção não dá nem para tentar discutir com eles.'
+
+                document.getElementById("imagem").src = "https://www.bonsfluidos.com.br/wp-content/uploads/2023/03/gemeos-1.jpg";
+                break
+
+                case "Câncer":
+                texto = 'Dóceis, gentis, românticos e carinhosos, são pessoas que se preocupam profundamente com seus amigos, família e lar.'
+
+                document.getElementById("imagem").src = "https://www.signos.com.br/wp-content/uploads/2018/06/sh_cancer_1444959119.jpg";
+                break
+
+                case "Leão":
+                texto =  'Os nativos do signo podem agir de maneira explosiva e impulsiva, mas sabem perdoar e dificilmente guardam rancor.'
+
+                document.getElementById("imagem").src = "https://img.nsctotal.com.br/wp-content/uploads/2022/10/Signo-de-Leao-shutterstock_1-1.jpg"
+                break
+
+                case "Virgem":
+                texto = 'Virgem também é o signo mais leal com quem ama de verdade, familiares, amigos e nos relacionamentos amorosos. O amor de Virgem signo é baseado na verdade e na maturidade'
+
+                document.getElementById("imagem").src = "https://vejasp.abril.com.br/wp-content/uploads/2022/09/virgo1.jpg?quality=70&strip=info&w=800&h=500&crop=1";
+                break
+
+                case "Libra":
+                texto = 'São considerados os mais luxuosos e elegantes do zodíaco. Para eles, é como se a vida fosse uma bela e sofisticada obra de arte. Amam a estética das coisas e desfilam elegância por onde passam. Costumam ser pessoas carismáticas, doces, justas, alegres, bem-humoradas e racionais'
+
+                document.getElementById("imagem").src = "https://vejasp.abril.com.br/wp-content/uploads/2018/09/libra1.jpg?quality=70&strip=info&w=800&resize=1200,800";
+                break
+
+                case "Escorpião":
+                texto = 'Reservados e profundos, os escorpianos têm a intensidade como característica marcante. São pessoas que exalam mistério e poder, e dificilmente deixam-se acessar por completo. Eles vivem no mundo interior das próprias emoções e são extremamente seletivos ao escolher quem poderá adentrar no seu universo.'
+
+                document.getElementById("imagem").src = "https://www.mulherportuguesa.com/wp-content/uploads/2016/06/Signo-escorpiao.jpg";
+                break
+
+                case "Sargitário":
+                texto = 'Estão sempre abertas a novas experiências e querendo aprender. Mente aberta e intuitiva, possuem uma personalidade inquieta e mutável.'
+
+                document.getElementById("imagem").src = "https://www.clara.es/medio/2022/10/13/sagitario_7aabdddb_1280x929.jpg";
+                break
+
+                case "Capricórnio":
+                texto = 'São realistas, determinados, disciplinados, organizados e estão sempre em busca de um lugar no mundo'
+
+                document.getElementById("imagem").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSePKc274fSxWTBnF2NTZkOkCrjA6ZC0f67cVDVZ4MN4VWVpZIKMW_Wagv0gQvPGbYH73o&usqp=CAU";
+                break
+
+                case "Aquário":
+                texto = 'Os aquarianos são pessoas muito diretas e não gostam de trapaças e de coisas feitas por baixo dos panos. Alguns podem achá-los indiferentes ou frios, mas eles apenas mantêm suas emoções mais contidas do que a maioria.'
+
+                document.getElementById("imagem").src = "https://www.signos.com.br/wp-content/uploads/2018/06/sh_arquario_1444959122.jpg";
+                break
+
+                case "Peixes":
+                texto = 'São pessoas sensíveis, sonhadoras, empáticas, pacientes, calmas, intuitivas, românticas, generosas, místicas e amáveis.'
+
+                document.getElementById("imagem").src = "https://www.signos.com.br/wp-content/uploads/2018/06/sh_peixes_1444434614.jpg";
+                break
+                
+                default:
+                    texto = "Insira um signo existente"
+
+            }
+
+            document.getElementById ("frase").innerHTML = texto 
+
+
+
+        }
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
